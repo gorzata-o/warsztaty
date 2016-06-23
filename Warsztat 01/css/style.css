@@ -1,0 +1,147 @@
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-bold-webfont.eot');
+    src: url('../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/raleway-bold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-light-webfont.eot');
+    src: url('../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff'),
+         url('../fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-black-webfont.eot');
+    src: url('../fonts/raleway-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-black-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-black-webfont.woff') format('woff'),
+         url('../fonts/raleway-black-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-black-webfont.svg#ralewayblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'raleway', verdana, sans-serif;
+}
+html, body {
+	width: 100%;
+	font-family: 'raleway', Verdana;
+}
+.container {
+	width: 1000px;
+	margin: 0px auto;
+}
+.row {
+	width: 100%;
+	height: inherit;
+	display: inline-block;
+}
+.green {
+	color: green;
+}
+header {
+	width: 100%;
+	height: 30px;
+	background-color: black;
+	color: white;
+	font-size: 1em;
+	font-weight: 100;
+}
+h5 {
+	margin: 5px 20px 5px 20px;
+	display: inline-block;
+	float: left;
+}
+ul {
+	float: right;
+}
+li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 5px 20px 5px 20px;
+}
+section {
+	width: 100%;
+}
+#sec1 {
+	background:/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+0,dfe5d7+40,b3bead+100;Wax+3D+%233 */
+background: #fcfff4; /* Old browsers */
+background: -moz-linear-gradient(top,  #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+	margin: 5px;
+	display: inline-block;
+	height: 400px;
+}
+#arrowL {
+	width: 5%;
+	display: inline-block;
+	float: left;
+	font-size: 50px;
+	margin-top: 225px;
+	color: green;
+}
+#blackchair {
+	width: 48%;
+	height: 400px;
+	display: inline-block;
+	float: left;
+	margin: auto;
+	margin-top: 60px;
+}
+.blackchair {
+	width: 100%;
+}
+h2 {
+	margin: 20px;
+}
+#sooc {
+	width: 39.9%;
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+	margin-top: 100px;
+	float: left;
+}
+button {
+	width: 170px;
+	height: 40px;
+	margin-top: 20px;
+	background-color: green;
+	border-radius: 3px;
+	color: white;
+	font-weight: 100;
+}
+#arrowR {
+	width: 5%;
+	display: inline-block;
+	text-align: right;
+	float: left;
+	font-size: 50px;
+	margin-top: 225px;
+	color: green;
+}
