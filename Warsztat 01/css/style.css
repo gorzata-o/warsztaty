@@ -7,7 +7,7 @@
          url('../fonts/raleway-bold-webfont.woff') format('woff'),
          url('../fonts/raleway-bold-webfont.ttf') format('truetype'),
          url('../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 
 }
@@ -33,7 +33,7 @@
          url('../fonts/raleway-black-webfont.woff') format('woff'),
          url('../fonts/raleway-black-webfont.ttf') format('truetype'),
          url('../fonts/raleway-black-webfont.svg#ralewayblack') format('svg');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 
 }
@@ -81,12 +81,32 @@ li {
 	list-style-type: none;
 	display: inline-block;
 	margin: 5px 20px 5px 20px;
+	position: relative;
+}
+.drop ul{
+	width: 130px;
+	display: none;
+	background-color: black;
+	color: white;
+	position: absolute;
+	margin-top: 20px;
+	z-index: 1;
+}
+.triangle {
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	position: absolute;
+	left: 30px;
+	top: -10px;
+	z-index: -1;
+	transform: rotate(45deg); 
 }
 section {
 	width: 100%;
 }
 #sec1 {
-	background:/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+0,dfe5d7+40,b3bead+100;Wax+3D+%233 */
+	
 background: #fcfff4; /* Old browsers */
 background: -moz-linear-gradient(top,  #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Chrome10-25,Safari5.1-6 */
@@ -94,29 +114,43 @@ background: linear-gradient(to bottom,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /*
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
 	margin: 5px;
 	display: inline-block;
-	height: 400px;
+	height: 500px;
 }
 #arrowL {
 	width: 5%;
 	display: inline-block;
 	float: left;
 	font-size: 50px;
-	margin-top: 125px;
+	margin-top: 175px;
 	color: #26c7a9;
+	font-weight: 100;
 }
-#blackchair {
+#arrowL:hover {
+	font-weight: bold;
+}
+#chair-slider {
 	width: 48%;
+	height: 400px;
+	display: inline-block;
+	float: left;
+	
+}
+
+.chairs {
+	width: 100%;
 	height: 400px;
 	display: inline-block;
 	float: left;
 	margin: auto;
 	margin-top: 60px;
+	z-index: 10;
 }
-.blackchair {
-	width: 100%;
+#chair-slider img {
+	display: none;
 }
 h2 {
 	margin: 20px;
+	font-weight: normal;
 }
 #sooc {
 	width: 39.9%;
@@ -125,6 +159,8 @@ h2 {
 	margin: auto;
 	margin-top: 100px;
 	float: left;
+	color: black;
+	font-weight: normal;
 }
 button {
 	width: 170px;
@@ -134,6 +170,7 @@ button {
 	border: 3px solid #26c7a9;
 	border-radius: 10px;
 	color: white;
+	font-size: 16px;
 	font-weight: 100;
 }
 #arrowR {
@@ -142,8 +179,12 @@ button {
 	text-align: right;
 	float: left;
 	font-size: 50px;
-	margin-top: 125px;
+	margin-top: 175px;
 	color: #26c7a9;
+	font-weight: 100;
+}
+#arrowR:hover {
+	font-weight: bold;
 }
 .content {
 	width: 300px;
@@ -157,19 +198,21 @@ button {
 .content p {
 	font-weight: 100;
 	margin: 10px;
+	z-index: 1;
 }
 .pictitle {
 	width: 300px;
 	height: 40px;
-	background-color: rgba(255, 255, 255, 0.3)
-	
+	background-color: rgba(255, 255, 255, 0.3);
+	position: relative;
 }
-.h4 {
+h4 {
 	width: 150px;
 	border-bottom: 8px solid #26c7a9;
 	margin-left: 10px;
-	margin-top: 5px;
+	margin-top: 10px;
 	border-radius: 2px;
+	font-weight: normal;
 }
 #clair {
 	background-image: url('../images/box1_img.jpg');
@@ -190,13 +233,14 @@ button {
 	width: 1000px;
 	height: 100px;
 }
-.h3 {
+h3 {
 	width: 300px;
 	border-bottom: 8px solid #26c7a9;
 	margin-left: 10px;
 	margin-top: 10px;
 	padding-top: 20px;
 	border-radius: 2px;
+	font-weight: normal;
 }
 .plan {
 	width: 300px;
@@ -234,9 +278,13 @@ button {
 	margin: auto;
 }
 .whatplan {
-	text-align: center;
 	margin-top: 30px;
 	color: #26c7a9;
+}
+.whatplan h3 {
+	font-weight: normal;
+	border: none;
+	text-align: center;
 }
 .circle {
 	width: 130px;
@@ -247,10 +295,11 @@ button {
 	border-radius: 50%;
 	text-align: center;
 	font-size: 40px;
-	font-weight: bold;
+	font-weight: normal;
 	margin: 20px auto;
 	padding-top: 20px;
 }
+
 .pln {
 	font-size: 18px;
 }
@@ -311,22 +360,119 @@ sup {
 	color: #26c7a9;
 }
 
-#contact {
-	background-color: white;
-}
 
-.contact {
-
-}
 #form {
-	width: 500px;
-	height: 500px;
+	width: 599px;
+	height: 350px;
 	float: left;
 	display: inline-block;
 }
+.data {
+	width: 550px;
+	border: 2px solid rgba(38,199,169, 0.3);
+	margin: 10px;
+	padding: 10px;
+	font-weight: 100;
+	font-size: 16px;
+	color: black;
+	opacity: 0.5;
+	text-align: left;
+}
+textarea {
+	resize: none;
+}
 #red {
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: 3500px;
 	float: right;
 	display: inline-block;
+}
+.redchair {
+	width: 300px;
+	height: 150px;
+	background-image: url('../images/red_chair.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+#checkbox {
+	width: 300px;
+	height: 50px;
+	display: inline-block;
+	border: 2px solid black;
+}
+
+.check {
+	display: inherit;
+	float: left;
+	width: 60px;
+	height: 50px;
+}
+/*Ta opcja użycia obrazka w checkbox nie działa w Firefox. Czy jest jakaś opcja, żeby działało? Czy należy zrobić checkbox w zupełnie inny sposob?*/
+input[type=checkbox]:before { 
+	content: ""; 
+	display: inherit;
+	float: left;
+	width:48px; 
+	height:40px; 
+	background: white;
+	border: 2px solid rgba(38,199,169, 0.3); 
+}
+
+
+input[type=checkbox]:checked:before { 
+	background:white;
+	content: url(../images/form_ok.jpg);
+}​
+
+.agree {
+	display: inherit;
+	float: right;
+	width: 200px;
+	height: 50px;
+}
+
+
+.agree {
+	color: #5f5f5f;
+	font-weight: 100;
+	display: inherit;
+	float: left;
+	margin: auto;
+	margin-top: 4px;
+}
+}
+.button {
+	margin: auto;
+	margin-left: 70px;
+}
+
+footer {
+	height: 50px;
+}
+.credits {
+	width: 500px;
+	height: 40px;
+	color: #e3e3e3;
+	font-weight: 100;
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+}
+.fanpages {
+	display: inline-block;
+	float: right;
+}
+.logoEnd {
+	width: 150px;
+	height: 40px;
+	display: inline-block;
+	float: right;
+	color: #e3e3e3;
+	margin-left: 20px;
+	margin-top:10px;
+	font-weight: normal;
+}
+span.logoEnd {
+	font-weight: bold;
 }
